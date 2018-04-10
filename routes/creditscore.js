@@ -15,7 +15,7 @@ exports.score = function(req, res){
   
   var score = firstname.hashCode() + lastname.hashCode() + dateofbirth.hashCode() + ssn.hashCode();
   
-  score = score % SCORE_MAX;
+  score = score % SCORE_MAX; 
   
   while (score < SCORE_MIN) {
 	score = score + 100;
